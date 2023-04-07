@@ -15,13 +15,11 @@ const hobbies = [
     }
 ]
 
-
-
 const CheckBox = () => {
 
     const [checked, setChecked] = useState([]);
 
-    console.log(checked);
+    console.log('Check on Checkbox Component : ', checked);
 
     const handleCheck = (name) => {
         // setChecked(prev => {

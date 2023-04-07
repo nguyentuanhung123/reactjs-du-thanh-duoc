@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* body {
@@ -40,6 +40,7 @@
   right: 0;
   bottom: 0;
   background: rgb(40, 86, 255);
+  border-radius: 6px;
   z-index: 1;
 }
 
@@ -50,6 +51,7 @@
   right: 0;
   bottom: 0;
   color: #fff;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;

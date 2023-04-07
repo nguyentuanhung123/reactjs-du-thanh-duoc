@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import UserProfile from "./UserProfile";
 
 const initialAddress = () => {
     console.log('initialAddress');
@@ -112,24 +113,14 @@ const User = () => {
     useEffect(() => {
         console.log('age', age);
         return () => {
-            console.log('Clean Age');
+            console.log('Clean Age');//chạy trước khi log cái age ở trên
         }
     }, [age])
 
     return (
         <>
             <div>User Funtional Component</div>
-            <ul>
-                <li>
-                    First name is {firstName}
-                </li>
-                <li>He is {age} years old</li>
-                <li>Nation : {address.nation}</li>
-                {/* <li>City : {address.city}</li> */}
-                <li>Street : {address.city.street}</li>
-                <li>House : {address.city.house}</li>
-            </ul>
-            <button onClick={increaseAge}>Increase Age</button>
+            <UserProfile firstName={firstName} age={age} address={address} increaseAge={increaseAge} />
             <button onClick={rerender}>Rerender</button>
             {/* <button onClick={changeCity}>Change City</button> */}
             <button onClick={changeStreet}>Change Street</button>

@@ -6,6 +6,7 @@ import { useState } from 'react';
 import Gift from './components/Two-way-binding/Gift';
 import UseEffect from './components/useEffect/UseEffect';
 import Product from './components/CustomCheckbox/Product';
+import SelectAllCheckbox from './components/Two-way-binding/SelectAllCheckbox';
 
 
 
@@ -20,6 +21,7 @@ function App() {
       }
       <UseEffect />
       <Gift />
+      <SelectAllCheckbox />
       <Product />
       <button onClick={() => setIsShow((prevState) => !prevState)}>
         Change isShow
